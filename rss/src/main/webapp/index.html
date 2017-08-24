@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>SSH Start</title>
+	
+	<!-- 外部資源引入 -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="resources/bootstrap/bootstrap.min.css">
+	<script type="text/javascript" src="resources/jquery/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="resources/bootstrap/bootstrap.min.js"></script>
+	<script type="text/javascript" src="resources/angularjs/angular-1.5.6.min.js"></script>
+	
+	<!-- Customize JS -->
+	<script type="text/javascript" src="./js/login.js"></script>
+	
+	<!-- Customize CSS -->
+	<style>
+		.autoW{
+   			margin: 0 auto;
+    		width:30%;
+		}
+		.text_fantasy{
+			font-family:fantasy;
+		}
+	</style>
+		  	
+</head>
+<body ng-app="loginApp" ng-controller="loginCtrl">
+	<div class="container">
+		<div class="form-horizontal">
+			<div class="form-group">
+				<h1 align="center" class="text_fantasy">DEMO</h1>
+			</div>
+			<div class="form-group">
+				<h3 align="center">Sign in with your Account</h3>
+			</div>
+	   		<div class="form-group" align="center">
+	   			<div class="autoW">
+					<input class="form-control" placeholder="Enter acount" ng-model="act">	
+				</div>
+	    	</div>
+	    	<div class="form-group" align="center">  
+	   			<div class="autoW">
+	   				<input class="form-control" placeholder="Enter password" ng-model="paw">
+	   			</div>
+	   		</div>      
+	    	<div class="form-group" align="center">
+	    		<div class="autoW">
+	    			<button class="btn btn-default btn-block btn-success" ng-click="login()">Login</button>
+	    		</div>   
+	    	</div>    	
+		</div>
+	</div>
+
+</body>
+</html>
